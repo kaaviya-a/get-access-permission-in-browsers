@@ -1,8 +1,8 @@
-<div class="mainSiteDetails" style="padding-top: 155px;">
-  <div class="siteDetailsHeader" style="text-align: center;padding-bottom: 50px;">
+<div class="mainSiteDetails">
+  <div class="siteDetailsHeader">
     <div class="moduleHeader">Get Access Permissions</div>
   </div>
-  <div style="display: flex;flex-direction: column;margin: 10px;"> 
+  <div class="flex column permissionOuter"> 
     <div class="permissionList">
       <span>Location</span>
       <span class="buttonOuter">
@@ -55,7 +55,7 @@
     </div>
 
     <div class="permissionList">
-      <span>Clipboard - Read</span>
+      <span>Clipboard</span>
       <span class="buttonOuter">
         <button *ngIf="clipboardReadState && clipboardReadState === 'prompt';else displayClipboardState" class="button cliptext" (click)="promptClipboard()">Request Permission</button>
         <ng-template #displayClipboardState>

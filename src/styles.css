@@ -48,77 +48,13 @@ body {
 .column {
     flex-direction: column;
 }
-.j-center {
-    justify-content: center;
-}
-.j-f-end {
-    justify-content: flex-end;
-}
-.s-between {
-    justify-content: space-between;
-}
-.s-around {
-    justify-content: space-around;
-}
 .a-center {
     align-items: center;
-}
-.j-between {
-    justify-content: space-between;
-}
-.wrap {
-    flex-wrap: wrap;
-}
-.pointer {
-    cursor: pointer;
-}
-.w100 {
-    width: 100%;
 }
 .moduleHeader {
     font-size: 36px;
     font-weight: bold;
     color: var(--eleven);
-}
-
-.hexagonShape {
-    margin-top: 0;
-    width: 20px;
-    height: 10px;
-    background-color: var(--one);
-    border-color: var(--one);
-    position: relative;
-    display: inline-block;
-}
-.hexagonShape:before {
-    content: " ";
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid;
-    border-color: inherit;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    position: absolute;
-    top: -10px;
-}
-.hexagonShape:after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -10px;
-    border-top: 10px solid;
-    border-color: inherit;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-}
-.circle {
-    position: absolute;
-    left: 5px;
-    height: 10px;
-    width: 10px;
-    background-color: var(--white);
-    border-radius: 50%;
-    display: inline-block;
 }
 ::-webkit-scrollbar {
     width: 5px;

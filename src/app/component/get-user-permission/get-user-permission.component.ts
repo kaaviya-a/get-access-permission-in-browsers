@@ -112,7 +112,6 @@ export class GetUserPermissionComponent implements OnInit {
       }
     });
 
-
   }
 
   promptLocation =  () => {
@@ -137,29 +136,5 @@ export class GetUserPermissionComponent implements OnInit {
   }
 
   promptBackgroundSync() {
-    console.log("back");
-    // Notification.requestPermission(permission => {
-    //   console.log(permission,"perrrr");
-    //   if (permission === 'granted'){ this.registerBackgroundSync() }
-    //   else console.error("Permission was not granted.")
-    // })
   }
-  // registerBackgroundSync() {
-  //   try {
-  //     console.log("here comesssssss");
-  //     if (!navigator.serviceWorker) {
-  //       return console.log("Service Worker not supported")
-  //     }
-  //     console.log("midd");
-  //     navigator.serviceWorker.ready
-  //       .then((registration) => {
-  //         console.log("ress", registration);
-  //         registration.sync.register('syncAttendees')
-  //       }).then(() => console.log("Registered background sync"))
-  //       .catch(err => console.log("Error registering background sync", err))
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-
-  // }
 }

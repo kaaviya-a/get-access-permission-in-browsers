@@ -6,7 +6,7 @@
     <div class="permissionList">
       <span>Location</span>
       <span class="buttonOuter">
-        <button *ngIf="locationState && locationState === 'prompt';else displayLocState" class="button" (click)="promptLocation()">Request Permission</button>
+        <button *ngIf="locationState && locationState === 'prompt';else displayLocState" class="button" (click)="promptLocation()">Set Permission</button>
         <ng-template #displayLocState>
           <span class="stateText blockText" *ngIf="locationState" [ngClass]="{'allowText': locationState === 'Granted'}">{{locationState}}</span>
         </ng-template>
@@ -16,7 +16,7 @@
     <div class="permissionList">
       <span>Microphone</span>
       <span class="buttonOuter">
-        <button *ngIf="microphoneState && microphoneState === 'prompt';else displayMicState" class="button" (click)="promptMicrophone()">Request Permission</button>
+        <button *ngIf="microphoneState && microphoneState === 'prompt';else displayMicState" class="button" (click)="promptMicrophone()">Set Permission</button>
         <ng-template #displayMicState>
           <span class="stateText blockText" *ngIf="microphoneState" [ngClass]="{'allowText': microphoneState === 'Granted'}">{{microphoneState}}</span>
         </ng-template>
@@ -26,7 +26,7 @@
     <div class="permissionList">
       <span>Camera</span>
       <span class="buttonOuter">
-        <button *ngIf="cameraState && cameraState === 'prompt';else displayCamState" class="button" (click)="promptCamera()">Request Permission</button>
+        <button *ngIf="cameraState && cameraState === 'prompt';else displayCamState" class="button" (click)="promptCamera()">Set Permission</button>
         <ng-template #displayCamState>
           <span class="stateText blockText" *ngIf="cameraState" [ngClass]="{'allowText': cameraState === 'Granted'}">{{cameraState}}</span>
         </ng-template>
@@ -36,7 +36,7 @@
     <div class="permissionList">
       <span>Notifications</span>
       <span class="buttonOuter">
-        <button *ngIf="notificationState && notificationState === 'prompt';else displayNotifyState" class="button" (click)="promptNotification()">Request Permission</button>
+        <button *ngIf="notificationState && notificationState === 'prompt';else displayNotifyState" class="button" (click)="promptNotification()">Set Permission</button>
         <ng-template #displayNotifyState>
           <span class="stateText blockText" *ngIf="notificationState" [ngClass]="{'allowText': notificationState === 'Granted'}">{{notificationState}}</span>
         </ng-template>
@@ -47,7 +47,7 @@
     <div class="permissionList">
       <span>Background-sync</span>
       <span class="buttonOuter">
-        <button *ngIf="backgroundState && backgroundState === 'prompt';else displaySyncState" class="button cliptext" (click)="promptBackgroundSync">Request Permission</button>
+        <button *ngIf="backgroundState && backgroundState === 'prompt';else displaySyncState" class="button cliptext" (click)="promptBackgroundSync">Set Permission</button>
         <ng-template #displaySyncState>
           <span class="stateText blockText" *ngIf="backgroundState" [ngClass]="{'allowText': backgroundState === 'Granted'}">{{backgroundState}}</span>
         </ng-template>
@@ -57,7 +57,7 @@
     <div class="permissionList">
       <span>Clipboard</span>
       <span class="buttonOuter">
-        <button *ngIf="clipboardReadState && clipboardReadState === 'prompt';else displayClipboardState" class="button cliptext" (click)="promptClipboard()">Request Permission</button>
+        <button *ngIf="clipboardReadState && clipboardReadState === 'prompt';else displayClipboardState" class="button cliptext" (click)="promptClipboard()">Set Permission</button>
         <ng-template #displayClipboardState>
           <span class="stateText blockText" *ngIf="clipboardReadState" [ngClass]="{'allowText': clipboardReadState === 'Granted'}">{{clipboardReadState}}</span>
         </ng-template>
